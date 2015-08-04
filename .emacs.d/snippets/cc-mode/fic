@@ -1,0 +1,12 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: fic
+# key: fic
+# --
+/*
+ * Copyright `(format-time-string "%Y")`-present Facebook. All Rights Reserved.
+ *
+ * `(file-name-nondirectory (buffer-file-name))` --
+ *
+ * $1
+ */
+ $0

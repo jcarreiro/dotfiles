@@ -12,6 +12,7 @@ export EDITOR=/usr/bin/vim
 export MANPATH=/usr/local/share/man:$MANPATH
 # export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:$PATH
 export PS1="\[\033[1;34m\][\u@\h] \w\$(_dotfiles_scm_info) \$\[\033[0m\] "
+export PYTHONPATH=${HOME}/dropbox/python
 
 set -o noclobber
 
@@ -28,6 +29,10 @@ alias cp='cp -i'
 alias ls='ls -GF'
 alias ll='ls -alGF'
 alias la='ls -AGF'
+
+# Runs the local copy of python (installed via brew), not the system copy. The
+# local copy has more up-to-date libraries.
+alias lpy='/usr/local/bin/python'
 
 # git aliases
 alias gl='git log --graph --format=oneline --abbrev-commit --all --decorate --dense'

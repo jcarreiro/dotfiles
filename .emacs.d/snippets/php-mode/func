@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: func
+# key: fn
+# --
+${1:$$(yas-choose-value '("public" "protected" "private"))} function ${2:name}(${3:args})${4:returns} {
+  $0
+}
